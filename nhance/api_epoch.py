@@ -1,16 +1,7 @@
 from __future__ import unicode_literals
 import frappe
-from frappe.utils import add_days, cint, cstr, flt, getdate, rounded, date_diff, money_in_words
-from frappe.model.naming import make_autoname
 
-from frappe import msgprint, _, throw, utils
-#from erpnext.hr.doctype.process_payroll.process_payroll import get_start_end_dates
-from erpnext.hr.doctype.employee.employee import get_holiday_list_for_employee
-from erpnext.utilities.transaction_base import TransactionBase
-from frappe.model.mapper import get_mapped_doc
-from erpnext.accounts.party import get_party_account_currency
-from frappe.desk.notifications import clear_doctype_notifications
-from frappe.jobs.background_jobs import enqueue
+from frappe import utils
 
 @frappe.whitelist()
 def get_user_role():
