@@ -11,12 +11,6 @@ app_color = "grey"
 app_email = "support@epochconsulting.in"
 app_license = "MIT"
 
-doc_events = {
-	"Sales Order Review":{
-		"before_save":"nhance.nhance.doctype.sales_order_review.sales_order_review.get_check_box_cheched",
-		"on_submit":"nhance.nhance.doctype.sales_order_review.sales_order_review.get_check_box_cheched"
-	}
-}
 # Includes in <head>
 # ------------------
 
@@ -111,16 +105,6 @@ doc_events = {
 
 #at 8am in morning*********************
 
-scheduler_events = {
-
- 	"cron": {
-        
-        "10 8 * * *": [
-            "nhance.api.getPoData"
-        ]
-    }
-
-}
 
 #at 8am in morning*********************
 
